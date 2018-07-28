@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<style type="text/css">
+    body {
+        font-size: 22px;
+    }
+
+    .wrap {
+        margin: 0 auto;
+        background: #ccc;
+        padding: 40px;
+    }
+
+    .row {
+        overflow: hidden;
+    }
+
+    .row .col1 {
+        float: left;
+        width: 120px;
+    }
+
+    .row .col2 {
+        padding-left: 50px;
+        float: left;
+
+    }
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+    <form name="dangky" action="" method="post">
+        <div class="row">
+            <div class="col1">
+               Họ Tên
+            </div>
+            <div class="col2">
+                <input type="text" name="username" placeholder="Nhập Họ  Tên" value="" >
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col1">
+                SĐT
+            </div>
+            <div class="col2">
+                <input type="text" name="username" placeholder="Nhập sdt" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Mã xác thực
+            </div>
+            <div class="col2">
+                <input type="text" name="username" placeholder="Nhập mã xác thực gửi tới  sdt trên" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+               Email
+            </div>
+            <div class="col2">
+                <input type="text" name="username" placeholder="Nhập Email" value="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col1">
+                Mật khẩu
+            </div>
+            <div class="col2">
+                <input type="text" name="username" placeholder="Mật khẩu từ 6 đến 32 kí tự" value="">
+            </div>
+        </div>
+            <div class="row">
+                <div class="col1">
+                    Giới tính
+                </div>
+                <div class="col2">
+                    Nam
+                    <input type="radio" name="gioitinh" value="nam">
+                    Nu
+                    <input type="radio" name="gioitinh" value="nu">
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col1">
+                    Ngày sinh
+                </div>
+                <div class="col2">
+                    <select name="ngay">
+                        <option value="">Ngay</option>
+                        <option value="1">Ngay 1</option>
+                        <option value="2">Ngay 2</option>
+                        <option value="3">Ngay 3</option>
+                        <option value="4">Ngay 4</option>
+                        <option value="5">Ngay 5</option>
+                        <option value="6">Ngay 6</option>
+                        <option value="7">Ngay 7</option>
+                        <option value="8">Ngay 8</option>
+                    </select>
+                </div>
+                <div class="col2">
+                    <select name="thang">
+                        <option value="">Thang</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="8">9</option>
+                        <option value="8">10</option>
+                        <option value="8">11</option>
+                        <option value="8">12</option>
+                    </select>
+                </div>
+                <div class="col2">
+                    <select name="Năm">
+                        <option value="">Nam</option>
+                        <option value="1">1999</option>
+                        <option value="2">2000</option>
+                        <option value="3">2001</option>
+                        <option value="4">2002</option>
+                        <option value="5">2003</option>
+                        <option value="6">2004</option>
+                        <option value="7">2005</option>
+                    </select>
+                </div>
+
+            </div>
+        <div clas="row">
+            <div class="col1">
+                <input type="checkbox">
+                Nhận các thông tin và chương trình khuyến mãi của Tiki qua email.
+                Khi bạn nhấn Đăng ký, bạn đã đồng ý thực hiện mọi giao dịch mua bán theo
+                <a href="#" >điều kiện sử dụng và chính sách của Tiki.</a>
+            </div>
+        </div>
+        <div class="col1">
+            <input type="button" name="dangki" value="Tạo tài khoản">
+
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
