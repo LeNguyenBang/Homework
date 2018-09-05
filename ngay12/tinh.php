@@ -12,14 +12,20 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<style type="text/css">
+    .f{
+        float: left;
+    }
+</style>
 </head>
 <body>
 
 
 <div class="container">
+
     <div class="row">
         <form  action="tinh.php" name="hr" method="post">
+            <p style="color: blueviolet;font-size: 40px" align="center">Công cụ tính tiền vay lãi</p>
             <div class="col-xs-3">
                 <div class="form-group">
                     <label>Số tiền vay (VND)</label>
@@ -39,8 +45,9 @@
     </div>
 
 
+
 <div class="row">
-    <table class="table table-bordered">
+    <table class="table table-condensed">
         <thead>
         <tr>
             <th>Kỳ hạn</th>
@@ -58,6 +65,8 @@
         $goctra=$tienvay/$thang;
         $tienthang1=$goctra+$tienvay*$lai/12;
         $tonglai=0;
+        ?>
+        <?php
         for($i=0;$i<$thang;$i++){
             $laitra=$tienvay*$lai/12;
             $tonglai+=$laitra;
@@ -73,12 +82,13 @@
         ?>
         </tbody>
     </table>
+    <div class="row">
+        <p style="font-size: 20px;color: darkblue">Số tiền trả tháng đầu: <?php echo $tienthang1; ?></p>
+        <p  style="font-size: 20px;color: darkblue">Tổng lãi phải trả:<?php echo $tonglai; ?></p>
+        <p  style="font-size: 20px;color: darkblue">Tổng số tiền gốc và lãi phải trả:<?php echo $tonglai+$_POST['tienvay']; ?></p>
+    </div>
 </div>
-<div class="row">
-    <p>Số tiền trả tháng đầu: <?php echo $tienthang1; ?></p>
-    <p>Tổng lãi phải trả:<?php echo $tonglai; ?></p>
-    <p>Tổng số tiền gốc và lãi phải trả:<?php echo $tonglai+$_POST['tienvay']; ?></p>
-</div>
+
 </div>
 </body>
 </html>
